@@ -26,7 +26,8 @@ public class LambdaButtons{
 			int b = 1 + 2;
 			System.out.println("1 + 2 is " + b);
 		});
-		randNumber.addActionListener((a)-> System.out.println());
+		randNumber.addActionListener((a)-> System.out.println(rand.nextInt(100)));
+		tellAJoke.addActionListener((a)-> System.out.println("knock knock"));
 		window.setVisible(true);
 		window.pack();
 	}
